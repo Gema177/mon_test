@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulaire d'enquête</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1 id="title">Formulaire d'enquête</h1>
+    <p id="description">Remplir ce formulaire afin de nous aider a vous offrire une meilleur experience</p>
+    
+    <form id="survey-form">
+        <div class="form-group">
+            <label id="name-label" for="name">Nom</label>
+            <input type="text" id="name" name="name" placeholder="Entrez votre nom" required>
+        </div>
+
+        <div class="form-group">
+            <label id="email-label" for="email"> votre Email</label>
+            <input type="email" id="email" name="email" placeholder="Entrez votre email" required>
+        </div>
+
+        <div class="form-group">
+            <label id="number-label" for="number"> votre Âge</label>
+            <input type="number" id="number" name="age" min="10" max="99" placeholder="Âge" required>
+        </div>
+
+        <div class="form-group">
+            <label for="dropdown">Quel est votre statut actuel ?</label>
+            <select id="dropdown" name="role">
+                <option disabled selected value>Sélectionnez une option</option>
+                <option value="student">Étudiant</option>
+                <option value="employee">Employé</option>
+                <option value="employee">professeur</option>
+                <option value="other">Autre</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <p>Que nous Recommandieriez-vous ?</p>
+            <label>
+                <input type="radio" name="recommend" value="definitely">Certainement
+            </label>
+            <label>
+                <input type="radio" name="recommend" value="maybe">Peut-être
+            </label>
+            <label>
+                <input type="radio" name="recommend" value="not-sure">Pas sûr
+            </label>
+        </div>
+
+        <div class="form-group">
+            <p>Qu'aimeriez-vous voir amélioré ? (Cochez tout ce qui s'applique)</p>
+            <label>
+                <input type="checkbox" name="prefer" value="interface">Interface
+            </label>
+            <label>
+                <input type="checkbox" name="prefer" value="performance">Performance
+            </label>
+            <label>
+                <input type="checkbox" name="prefer" value="features">Fonctionnalités
+            </label>
+        </div>
+
+        <div class="form-group">
+            <label for="comments">Commentaires additionnels</label>
+            <textarea id="comments" name="comments" placeholder="Entrez votre commentaire ici..."></textarea>
+        </div>
+
+        <button type="submit" id="submit">Soumettre</button>
+    </form>
+</body>
+</html>
